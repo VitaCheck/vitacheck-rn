@@ -5,16 +5,16 @@ buildscript {
         compileSdkVersion = 36
         targetSdkVersion = 36
         ndkVersion = "27.1.12297006"
-        kotlinVersion = "2.1.20"
+        kotlinVersion = "2.0.20" // ← 2.1.x 말고 2.0.20로
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
-        classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath "com.android.tools.build:gradle:8.6.1"              // ← 고정
+        classpath "com.facebook.react:react-native-gradle-plugin"     // RN가 자체 버전 관리
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.20"  // ← 고정
     }
 }
 
