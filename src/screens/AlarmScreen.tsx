@@ -1,3 +1,4 @@
+
 // src/screens/AlarmScreen.tsx
 import React, { useEffect, useMemo, useState } from 'react';
 import {
@@ -325,3 +326,4 @@ const styles = StyleSheet.create({
   },
   checkMark: { fontSize: 18, color: '#FFF', fontWeight: '900' },
 });
+
